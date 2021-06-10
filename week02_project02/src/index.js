@@ -4,15 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { render } from "react-dom";
-import { positions, Provider } from "react-alert";
-import AlertTemplate from "react-alert-template-basic";
-
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+   
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,6 +1,7 @@
 
 import {Link} from 'react-router-dom'
 import './App.css';
+
 export const NavBar = () => {
     const navStyle = {
         color: 'white',
@@ -16,8 +17,8 @@ export const NavBar = () => {
                     <Link style={navStyle} to="/myList">
                         <li> My List </li>
                     </Link>
-                    <Link style={navStyle}   to="/about">
-                        <li> About </li>
+                    <Link style={navStyle} to="/Login">
+                        <li> Login </li>
                     </Link>
                 </ul>
             </nav>

@@ -10,6 +10,7 @@ export const MovieCard = ({ Movie, MovieList, InMyFav , removeMovie }) => {
     MovieList.push(Movie);
     alert.success("Added to List!");
     localStorage.setItem('MyMovies', MovieList);
+    localStorage.setItem("LoggedIn", false);
   };
 
   const removeFromFav = Movie => {

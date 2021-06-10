@@ -48,6 +48,7 @@ class Movies extends React.Component {
     }
   }
   componentDidMount() {
+    localStorage.setItem("LoggedIn", "false");
     type.map((t) => {
       axios
         .get(`http://www.omdbapi.com/?s=${t}&apikey=b67cf7c7`)
@@ -58,6 +59,7 @@ class Movies extends React.Component {
         })
         .catch((error) => console.error(`Error:  ${error}`))
     })
+   
   }
   render() {
     return (
