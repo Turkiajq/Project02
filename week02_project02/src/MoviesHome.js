@@ -1,6 +1,6 @@
 import { MovieCard } from './MovieCard.js'
 import axios from 'axios'
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { positions, Provider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 
